@@ -16,9 +16,8 @@ def sprawdz_katalog(domena, katalog):
     url = x + "/" + katalog
     odpowiedz = requests.get(url, verify=False)
     if odpowiedz.status_code == 200:
-        print(f"Katalog {katalog} istnieje na stronie {domena}")
-    else:
-        print(f"Katalog {katalog} nie istnieje lub jest niedostepny na stronie {domena}")
+        print(f"Katalog {katalog} Valid site {domena}")
+   
 
 
 plik = open(dane, "r")
