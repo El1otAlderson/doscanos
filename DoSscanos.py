@@ -8,8 +8,10 @@ from urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
 
 
-print("Wpisz nazwe strony przyklad:  https://example.com")
+print("Put here full website name:  https://example.com")
 x = input()
+print("Put here your wordlist : xxxx.txt")
+dane = input()
 def sprawdz_katalog(domena, katalog):
     url = x + "/" + katalog
     odpowiedz = requests.get(url, verify=False)
@@ -19,7 +21,7 @@ def sprawdz_katalog(domena, katalog):
         print(f"Katalog {katalog} nie istnieje lub jest niedostepny na stronie {domena}")
 
 
-plik = open("katalogi.txt", "r")
+plik = open(dane, "r")
 katalogi = plik.readlines()
 plik.close()
 katalogi = [k.strip() for k in katalogi]
