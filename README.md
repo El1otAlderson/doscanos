@@ -1,8 +1,4 @@
-Download two files you can switch wordlist by two ways:
+Download dosscanos and wordlist if you want 
 
-Download new wordlist and change name to "katalogi.txt"
 
-OR
-
-Download new wordlist and change "katalogi.txt" to your name of wordlist in python code
 
